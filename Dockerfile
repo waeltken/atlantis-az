@@ -1,6 +1,6 @@
 ARG ATLANTIS_VERSION=v0.27.3
 FROM ghcr.io/runatlantis/atlantis:${ATLANTIS_VERSION}
-ARG AZURE_CLI_VERSION=2.60.0
+ARG AZURE_CLI_VERSION=2.61.0
 USER root
 RUN apk add --no-cache py3-pip && \
     pip install --break-system-packages --upgrade --no-cache pip && \
